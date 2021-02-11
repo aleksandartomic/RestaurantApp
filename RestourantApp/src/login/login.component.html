@@ -1,0 +1,32 @@
+<div class="image">
+  <div class="d-flex justify-content-center text-center">
+    <form #loginForm="ngForm" class="form" (ngSubmit)="login()">
+      <img class="mb-4" src="assets/RestourantIcon.png" alt="" width="100" height="100">
+  
+      <h1 class="h3 mb-3 fw-normal text-muted">Please sign in</h1>
+  
+      <label class="visually-hidden">User Name</label>
+      <input [(ngModel)]="model.username"
+      name="username" 
+      class="form-control" 
+      placeholder="User Name" 
+      required 
+      autofocus="">
+  
+      <label class="visually-hidden">Password</label>
+      <input [(ngModel)]="model.password"
+      name="password" 
+      type="password"
+      class="form-control" 
+      placeholder="Password" 
+      required>
+      
+      <br>
+      
+        <button [disabled]="!loginForm.valid" class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <br><br>
+        <button class="btn btn-lg btn btn-link" type="submit" [routerLink]="['/register']" routerLinkActive="active" >Register</button>
+  
+    </form>
+  </div>
+</div>

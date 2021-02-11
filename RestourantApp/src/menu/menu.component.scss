@@ -1,0 +1,44 @@
+.menu {
+    margin-bottom:10px; 
+    margin-top:10px; 
+    padding:10px;
+    max-height: 900px;
+    max-width:  1000px;
+    margin-left: 20px;
+}
+
+.text-primary {
+    font-size: 30px;
+}
+
+.img {
+    border-radius:5px;
+    border:1px solid cadetblue;
+    max-height: 160px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left {
+    width: 75%;
+  }
+  
+  .right {
+    width: 25%;
+    padding-right: 2%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
